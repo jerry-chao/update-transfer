@@ -1,0 +1,63 @@
+{
+  "name": "update-transfer",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.0.0",
+    "dayjs": "^1.10.5",
+    "egg": "^2.15.1",
+    "egg-cors": "^2.2.3",
+    "egg-knex": "^3.0.1",
+    "egg-scripts": "^2.11.0",
+    "egg-static": "^2.2.0",
+    "egg-validate": "^2.0.2",
+    "egg-view-nunjucks": "^2.3.0",
+    "geoip-lite": "^1.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "md5-node": "^1.0.1",
+    "node-mysql-importer": "^0.0.10",
+    "node-rsa": "^1.1.1"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0",
+    "faker": "^5.5.3",
+    "mysql-import": "^5.0.21"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --workers=2  --port=7000 --daemon --title=update-transfer",
+    "stop": "egg-scripts stop --title=update-transfer",
+    "dev": "egg-bin dev --port=7000",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}

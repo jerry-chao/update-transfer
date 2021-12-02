@@ -1,0 +1,24 @@
+logs/
+npm-debug.log
+yarn-error.log
+node_modules/
+package-lock.json
+yarn.lock
+coverage/
+.idea/
+run/
+.DS_Store
+*.sw*
+*.un~
+typings/
+.nyc_output/
+# app/middleware/developOnly.js
+data/
+# download/
+
+config/config.local.js
+config/config.prod.js
+config/config.unittest.js
+test/app/controller/json/resourceMap.json
+
+.github/
